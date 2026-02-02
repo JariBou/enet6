@@ -3,6 +3,8 @@ add_rules("mode.debug", "mode.release")
 set_project("enet-ipv6")
 set_version("6.1.2")
 
+includes("xmake/**.lua")
+
 if not is_plat("windows", "mingw") then
     -- detect features on Unix platforms
     option("fcntl", { cincludes = {"fcntl.h", "unistd.h"}, cfuncs = "fcntl", defines = "HAS_FCNTL=1"})
