@@ -1,7 +1,7 @@
 add_rules("mode.debug", "mode.release")
 
 set_project("enet-ipv6")
-set_version("6.1.2")
+set_version("6.1.3")
 
 includes("xmake/**.lua")
 
